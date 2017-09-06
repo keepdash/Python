@@ -48,7 +48,7 @@ if __name__ == '__main__':
     model.train()
     '''
 
-    learning_rate = 0.0003
+    learning_rate = 0.0001
     minibatch_size = 256
     num_epochs = 50
 
