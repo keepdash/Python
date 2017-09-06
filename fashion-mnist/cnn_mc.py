@@ -109,7 +109,7 @@ class CNN_MC:
                     _, minibatch_cost = sess.run([optimizer, cost], feed_dict={X: minibatch_X, Y: minibatch_Y, is_training: True})
                     epoch_cost += minibatch_cost / num_minibatches
 
-                if self.print_cost == True and epoch % 5 == 0:
+                if self.print_cost == True: #and epoch % 5 == 0:
                     print("Cost after epoch %i: %f" % (epoch, epoch_cost))
                 if self.print_cost == True: #and epoch % 2 == 0:
                     costs.append(epoch_cost)
